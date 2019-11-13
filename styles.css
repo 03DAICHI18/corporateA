@@ -1,0 +1,321 @@
+html {
+  margin: 0;
+  padding:0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", sans-serif;
+  font-weight: 500;
+  color: #333;
+  line-height: 2.0;
+}
+
+h2,h3,h4,h5 {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+ul,li,dl,dt,dd {
+  margin:0;
+  padding:0;
+  list-style: none;
+}
+
+p {
+  margin: 0 0 1em 0;
+}
+
+a { 
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover { 
+  transition: .3s;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.inner {
+width: 100%;
+overflow: hidden;
+}
+
+section {
+  margin-bottom: 120px;
+}
+
+/*========= header =========== */
+.header {
+  width: 100%;
+}
+
+.header-nav {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1{
+  margin-left: 20px;
+}
+
+.header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header nav ul li {
+  margin-right: 50px;
+}
+
+/* ========= mainvisual =========== */
+.mainvisual {
+  position: relative;
+  height: 600px;
+  width: 100%;
+}
+
+.mainvisual img {
+  width: 70%;
+  height: 500px;
+  object-fit: cover;
+  margin-left: 30%;
+}
+
+.mainvisual h2 {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  background: rgba(255, 255, 255, 0.6);
+  font-size: 3rem;
+  padding: 1rem;
+}
+
+.mainvisual::before  {
+  content: '';
+  background: #bbc0c4;
+  height: 700px;
+  width: 45%;
+  position: absolute;
+  top: -18%;
+  left: 0;
+  z-index: -1;
+}
+
+/* ========= greeting =========== */
+.greeting h2 {
+  margin-bottom: 50px;
+  text-align: center;
+ }
+ 
+ .greeting .contents {
+  display: flex;
+  max-width: 1400px;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.greeting .contents figure {
+  width: 50%;
+}
+
+.greeting .content {
+  width: 48%;
+  padding: 0 20px;
+}
+
+
+/*========= work =========== */
+ .work {
+  width: 100%;
+  padding-top: 40px;
+  position: relative;
+}
+
+.work::before {
+  content: '';
+  background: #e8e7e7;
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  z-index: -1;
+}
+
+.work h2 {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.work ul {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.work ul li {
+  width: 400px;
+  padding: 0 20px;
+}
+
+.work ul li figure {
+  margin: 0;
+}
+
+.work__imgwrap {
+  background: rgb(2,0,36);
+  background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(121,91,9,1) 50%, rgba(255,186,0,1) 100%);
+}
+
+.work__img {
+  opacity: .5;
+}
+
+/*========= news =========== */
+.news {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 180px;
+}
+
+.news h2 {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.news li {
+  border-bottom: dotted 1px #dedede;
+  padding: 20px 0 20px 20px; 
+}
+
+.news li a {
+  color:#333333;
+}
+
+.news li a:hover{
+  opacity: 0.6;
+}
+
+.news li time {
+  font-size: 0.75em;
+  color: #949494;
+  padding-right: 0px;
+  margin-right: 80px;
+}
+
+/*========= recruit =========== */
+.recruit {
+  position: relative;
+}
+
+.recruit-img img {
+  width: 80%;
+  height:400px;
+  margin-right:20%;
+  object-fit: cover;
+}
+
+.recruit-img::after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  top:0;
+  left: 0;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.recruit h2 a {
+  position: absolute;
+  top: 45%;
+  right: 52%;
+  width: 250px;
+  height: 60px;
+  background-color: rgba(255,255,255,0.6);
+  line-height: 60px;
+  text-align: center;
+}
+
+.bg2 {
+  position: absolute;
+  background: #e8e7e7;
+  height: 400px;
+  width: 45%;
+  top: -20%;
+  right: 0;
+  z-index: -1;
+}
+
+/*========= footer =========== */
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.adress {
+  margin-left: 20px;
+}
+
+.adress p {
+  line-height: 1.8;
+}
+
+footer ul {
+  display: flex;
+}
+
+footer ul li {
+  margin-right: 50px;
+}
+
+
+.copylight p {
+  text-align: center;
+  font-size: 0.75rem;
+  margin: 0;
+  line-height: 100px;
+  color: #333;
+  background-color: #e8e7e7;
+}
+
+/*========= page-top =========== */
+#page-top {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(143, 141, 138 ,0.7);
+  display: flex;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+.page-top__arrow {
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  border-bottom: 3px solid #000;
+  border-right: 3px solid #000;
+  transform: rotate(225deg);
+  position: absolute;
+  top: 40%;
+  left: 30%;
+}
+
+#page-top:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
