@@ -1,5 +1,6 @@
 $(function() {
 
+// トップスクロール
 // (必要であれば)画面リロード時に一旦非表示設定をしておく
 $(window).on('load resize', function(){
   $('#page-top').css('display','none');
@@ -19,6 +20,11 @@ $(window).on('load resize', function(){
    $('#page-top').click(function () {
    $('body, html').animate({ scrollTop: 0 }, 500);
     return false;
+    });
+
+//SPサイズで表示されるハンバーガーメニュー
+    $('#header-sp-btn').on('click', function () {
+      $('#header-sp-menu').animate({ width: 'toggle'}, 300);
     });
 
   });
