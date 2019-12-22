@@ -10,15 +10,15 @@ $(window).on('load resize', function(){
   $(window).scroll(function () {
   if ($(this).scrollTop() < 200) {
 // 200px以下だとフェードアウト
-   $('#page-top').fadeOut();
+    $('#page-top').fadeOut();
     } else {
 // 200px以上離れたらフェードイン
-   $('#page-top').fadeIn();
+    $('#page-top').fadeIn();
     }
     });
 // クリックしたらトップ（高さ0px）へスクロール（0.5秒かけて）
-   $('#page-top').click(function () {
-   $('body, html').animate({ scrollTop: 0 }, 500);
+    $('#page-top').click(function () {
+    $('body, html').animate({ scrollTop: 0 }, 500);
     return false;
     });
 
